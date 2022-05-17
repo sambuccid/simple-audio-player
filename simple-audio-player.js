@@ -3,14 +3,14 @@ function AudioPlayerContainer(audioEl){
     
     const playerDoc = new DOMParser().parseFromString(`
         <div class="_audio-player-container">
-            <button class="play-icon"><img src="play_icon.png"></button>
+            <button class="play-icon"><img></button>
             <span class="current-time time">0:00</span>
             <input type="range" class="seek-slider" max="100" value="0">
             <span class="duration time">0:00</span>
             <div>
                 <output class="volume-output">100</output>
                 <input type="range" class="volume-slider" max="100" value="100">
-                <button class="mute-icon"><img src="volume_icon.png"></button>
+                <button class="mute-icon"><img></button>
             </div>
         </div>
     `,'text/html');
@@ -137,13 +137,13 @@ function AudioPlayerContainer(audioEl){
     initVolumeSlider();
 
     initButton("play-icon",[
-        {name:"paused", image:"play_icon.png", callback: ()=> audio.pause()},
-        {name:"playing", image:"pause_icon.png", callback: ()=> audio.play()}
+        {name:"paused", image:"img/play_icon.png", callback: ()=> audio.pause()},
+        {name:"playing", image:"img/pause_icon.png", callback: ()=> audio.play()}
     ]);
 
     initButton("mute-icon",[
-        {name:"unmuted", image:"volume_icon.png", callback: ()=> audio.unmute()},
-        {name:"muted", image:"mute_icon.png", callback: ()=> audio.mute()}
+        {name:"unmuted", image:"img/volume_icon.png", callback: ()=> audio.unmute()},
+        {name:"muted", image:"img/mute_icon.png", callback: ()=> audio.mute()}
     ]);
 
     function setProgressPercentageRange(rangeInput, property) {
