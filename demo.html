@@ -1,0 +1,15 @@
+<html>
+<header>
+    <link rel="stylesheet" href="simple-audio-player.css">
+    <script src="simple-audio-player.js"></script>
+</header>
+
+<body style="background-color: #B0C4DE;">
+    <h2 style="color: #e69b00;">Player Demo</h2>
+    <audio controls id="player" src="https://freepd.com/music/Advertime.mp3" preload="metadata"></audio>
+    <script>
+        AudioPlayerContainer(document.getElementById("player")).create();
+    </script>
+</body>
+
+</html>
