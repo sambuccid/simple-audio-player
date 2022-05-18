@@ -4,7 +4,7 @@ This project is a simple library that contains a cross-browser audio audio playe
 The audio player aims at being basic and simple, this makes it an audio player easy to hack and customize.
 
 ## How does it look:
-![Simple Audio Player](https://github.com/sambuccid/simple-audio-player/blob/main/Simple Audio Player.png?raw=true)
+![Simple Audio Player](Simple_Audio_Player.png?raw=true)
 
 ## How to use it:
 To use the player all you need to do is to
