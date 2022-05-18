@@ -22,22 +22,22 @@ Once you downloaded the repository and you made sure you copied all the files in
 You can also use the library without using a server by just opening the html pages from your browser.
 
 So first of all we need to include the css file that defines the style of the player, to do this add to your header in your page
-```
+```html
 <link rel="stylesheet" href="simple-audio-player.css">
 ```
 
 Next step is to include the js file to make the actual player work
-```
+```html
 <script src="simple-audio-player.js"></script>
 ```
 
 At this point you want to have an `audio` element in your page that will then be transformed into the audio player, the element will define things like which audio to play, the element looks like this
-```
+```html
 <audio controls id="audio" src="https://freepd.com/music/Advertime.mp3" preload="metadata"></audio>
 ```
 
 We are at the last step, where all we need to do is to tell the library which element in your page should become the player, in order to do this we need to add some javascript
-```
+```javascript
 var audioElement = document.getElementById("audio");
 AudioPlayerContainer(audioElement).create();
 ```
@@ -50,4 +50,5 @@ This player aims to be really simple and basic but even if there aren't plans to
 
 ## Credits
 The project started following this article from css-tricks [Lets create an audio player](https://css-tricks.com/lets-create-a-custom-audio-player)
+
 The song used in the demo is Advertime by Rafael Krux in [FreePD](https://freepd.com)
