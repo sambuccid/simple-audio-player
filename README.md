@@ -50,3 +50,4 @@ This player aims to be really simple and basic but even if there aren't plans to
 
 ## Credits
 The project started following this article from css-tricks [Lets create an audio player](https://css-tricks.com/lets-create-a-custom-audio-player)
+The song used in the demo is Advertime by Rafael Krux in [FreePD](https://freepd.com)
